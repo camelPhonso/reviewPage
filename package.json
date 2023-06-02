@@ -1,0 +1,23 @@
+{
+  "name": "reviewpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "DB_FILE=test.db.sqlite node test.js",
+    "dev": "node ./src/index.js",
+    "lint": "npx eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "better-sqlite3": "^8.4.0",
+    "eslint": "^8.41.0",
+    "eslint-config-kentcdodds": "^20.5.0",
+    "express": "^4.18.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.1.3"
+  }
+}
