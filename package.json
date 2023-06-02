@@ -6,7 +6,8 @@
   "scripts": {
     "test": "DB_FILE=test.db.sqlite node test.js",
     "dev": "node ./src/index.js",
-    "lint": "npx eslint ."
+    "lint": "npx eslint .",
+    "seed": "node ./database/seed.js"
   },
   "keywords": [],
   "author": "",
