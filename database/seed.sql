@@ -9,7 +9,7 @@ ON CONFLICT DO NOTHING;
 INSERT INTO reviews (user_id, content) VALUES
   (1, 'Great person to be around.'),
   (2, 'Very knowledgeable and helpful.'),
-  (3, 'Always there when you need her.')
+  (3, 'Aggressively helpful.')
 ON CONFLICT DO NOTHING;
 
 COMMIT;
