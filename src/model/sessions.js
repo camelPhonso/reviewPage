@@ -13,5 +13,14 @@ function selectSession(sid) {
   return select_session.get(sid);
 }
 
+const delete_session = db.prepare(/*sql*/ `
+  DELETE FROM sessions
+  WHERE id = $id
+`)
+
+function deleteSession(session){
+  return delete_session.run(session);
+}
+
 // exports
-module.exports = { selectSession };
+module.exports = { selectSession, deleteSession };
