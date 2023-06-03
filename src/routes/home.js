@@ -4,11 +4,11 @@ const { form } = require("../templates/form.js");
 const { selectAllReviews } = require("../model/reviews.js");
 
 function get(req, res) {
-  const isLoggedIn = "Truty"; //THIS NEEDS TO BE BUILT AND ADDED
+  const session = req.sessions;
   const allReviews = selectAllReviews();
 
   const title = "Review Me";
-  const body = home(allReviews, form(isLoggedIn));
+  const body = home(allReviews, form(session));
 
   res.send(layout(title, body));
 }
