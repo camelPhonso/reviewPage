@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS users (
   name TEXT NOT NULL,
   hash TEXT NOT NULL UNIQUE,
   relation TEXT NOT NULL,
-UNIQUE(name, relation)
+  UNIQUE(name, relation)
 );
 
 CREATE TABLE IF NOT EXISTS reviews (

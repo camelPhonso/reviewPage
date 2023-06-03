@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "DB_FILE=test.db.sqlite node test.js",
     "dev": "node ./src/index.js",
     "lint": "npx eslint .",
     "seed": "DB_FILE=db.sqlite node ./database/seed.js",
     "write": "npx prettier --write \"**/src/*.*\"",
-    "test": "DB_FILE=test.sqlite node ./src/test/test.js"
+    "test": "DB_FILE=test.sqlite node ./test/test.js"
   },
   "keywords": [],
   "author": "",
