@@ -21,10 +21,10 @@ function mapReviews(allReviews) {
 function homePage(allReviews, form) {
   return /*html*/ `
     <body>
-      <section class="review-board">
+      <section class="display-section">
         ${mapReviews(allReviews)}
       </section>
-      <section class="submission-form">
+      <section class="form-section">
         ${form}
       </section>
     </body>
