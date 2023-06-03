@@ -9,8 +9,8 @@ function reset() {
 
   db.exec(/*sql*/ `
     INSERT INTO users (name, hash, relation) VALUES
-      ('John Doe', 'hash1', 'friend'),
-      ('Jane Smith', 'hash2', 'colleague'),
+      ('John Cooper', 'hash1', 'friend'),
+      ('Jane Doe', 'hash2', 'colleague'),
       ('Alice Johnson', 'hash3', 'family')
     ON CONFLICT DO NOTHING;
   `);
