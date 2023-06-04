@@ -7,7 +7,7 @@ const { reset } = require("./helpers.js");
 // users.js
 function usersSelects() {
   reset();
-  const userJane = selectUser("Jane Smith");
+  const userJane = selectUser("Jane Doe");
 
   assert.equal(userJane.id, 2, `Expected the returned id to be '2' but got ${userJane.id}`);
   assert.equal(userJane.relation, "colleague", `Expected the relation to be "colleague" but got ${userJane.relation}`);

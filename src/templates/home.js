@@ -4,7 +4,7 @@ function mapReviews(allReviews) {
     <div class="review-display">
       <div class="review-display__head">
         <p class="review-display__head--name">
-          ${review.user}
+          ${review.username}
         </p>
         <p class="review-display__head--relation">
           ${review.relation}
@@ -15,7 +15,7 @@ function mapReviews(allReviews) {
       </div>
     </div>
   `;
-  });
+  }).join('');
 }
 
 function homePage(allReviews, form) {

@@ -1,11 +1,11 @@
 const db = require("../database/db.js");
 
 const select_session = db.prepare(/*sql*/ `
-  SELECT (
+  SELECT
     id,
     user_id,
     STRFTIME('%d/%m/%Y', created_at) AS created_at
-  ) FROM sessions
+  FROM sessions
   WHERE id = ?
 `);
 
@@ -16,9 +16,9 @@ function selectSession(sid) {
 const delete_session = db.prepare(/*sql*/ `
   DELETE FROM sessions
   WHERE id = $id
-`)
+`);
 
-function deleteSession(session){
+function deleteSession(session) {
   return delete_session.run(session);
 }
 
